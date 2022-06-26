@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0a5d94;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 0px 20px;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    margin-top: 20px;
+}
+
+.pdf-file {
+    height: 600px;
+}
+
+@media (max-width: 375px) {
+    .wrapper {
+        display: block;
+    }
+    .pdf-file {
+        width: 330px;
+        height: 400px;
+    }
+}
